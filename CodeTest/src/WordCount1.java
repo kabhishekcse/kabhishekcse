@@ -8,7 +8,7 @@ public class WordCount1 {
 // Collectors groupingBy() method
 // Get the List
         List<String> g
-                = Arrays.asList("geeks", "for", "geeks");
+                = Arrays.asList("geeks", "for", "geeks", "ravi");
 
         // Collect the list as map
         // by groupingBy() method
