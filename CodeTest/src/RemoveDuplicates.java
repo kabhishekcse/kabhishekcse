@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class RemoveDuplicates {
 
     public static int removeDuplicates(int[] nums) {
+        Arrays.sort(nums);
         if (nums.length == 0) return 0;
 
         int uniqueCount = 1; // At least one unique element in the array
