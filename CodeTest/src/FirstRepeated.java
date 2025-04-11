@@ -4,10 +4,10 @@ import java.util.function.Function;
 
 public class FirstRepeated{
   public static void main(String args[]) {
-          String input = "Java Articles are Awesome";
+          String input = "Javaj Articles are Awesome";
 
           Character result = input.chars() // Stream of String       
-                                  .mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s))) // First convert to Character object and then to lowercase         
+                                  .mapToObj(s -> Character.toLowerCase((char) s)) // First convert to Character object and then to lowercase
                                   .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting())) //Store the chars in map with count 
                                   .entrySet()
                                   .stream()
